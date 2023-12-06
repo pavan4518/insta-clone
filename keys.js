@@ -3,5 +3,5 @@
 
 module.exports ={
     mongoUrl:"mongodb://localhost:27017/E-commerse" ,  
-    jwt_secret:"jdjfofjslsdf"
+    jwt_secret:"qwertyuipopk"
 }
