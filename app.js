@@ -3,9 +3,15 @@ const app=express()
 const port =5000;
 const mongoose=require("mongoose")
 const mongoUrl=require('./keys')
+
 require('./model/models')
+require('./model/post')
+const cors =require("cors")
+
+app.use(cors())
 
 app.use(express.json())
+app.use(require('./routes/createPost'))
 
 app.use(require('./routes/auth'))
 
