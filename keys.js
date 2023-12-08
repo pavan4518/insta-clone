@@ -3,5 +3,6 @@
 
 module.exports ={
     mongoUrl:"mongodb://localhost:27017/E-commerse" ,  
+      //mongoUrl:"mongodb+srv:p95524706:e0Wei66mJipfjHif@cluster0.vxjafrd.mongodb.net/?retryWrites=true&w=majority",
     jwt_secret:"qwertyuipopk"
 }
