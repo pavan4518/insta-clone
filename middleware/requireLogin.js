@@ -5,7 +5,7 @@ const USER =mongoose.model("USER")
  
  
 module.exports=(req,res,next)=>{
-    console.log("hello")
+   
     const {authorization} = req.headers;
     if(!authorization){
         return res.status(401).json({error:"you must have login first"})
