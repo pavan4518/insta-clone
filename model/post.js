@@ -8,6 +8,9 @@ const postSchema =new mongoose.Schema({
         type:String,
         required:true
     },
+    likes:[
+  {type:ObjectId,ref:"USER"}
+    ],
     photo:{
         type:String,
         require:true

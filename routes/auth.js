@@ -7,9 +7,7 @@ const jwt =require("jsonwebtoken")
 const {jwt_secret}=require("../keys")
 
 
-router.get('/',(req,res)=>{
- 
-})
+
 router.post('/signup',(req,res)=>{
    const {name , userName, email, password}= req.body
    if (!name || !userName || !email || !password){

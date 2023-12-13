@@ -7,7 +7,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    likes:[{type:ObjectId, ref:"USER"}],
+    //likes:[{type:ObjectId, ref:"USER"}],
+    comments:[{
+        comment:{type:String},
+        postedBy:{type:ObjectId, ref:"USER"}
+    }],
     userName:{
         type:String,
         required:true
